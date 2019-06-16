@@ -115,7 +115,7 @@ class MeowBottomNavigationCell : RelativeLayout, LayoutContainer {
             iv.scaleY = scale
 
             val d = GradientDrawable()
-            d.setColor(circleColor)
+            d.setColor(Color.parseColor("#448AFF"))
             d.shape = GradientDrawable.OVAL
 
             ViewCompat.setBackground(v_circle, d)
@@ -131,7 +131,7 @@ class MeowBottomNavigationCell : RelativeLayout, LayoutContainer {
         set(value) {
             field = value
             val d = GradientDrawable()
-            d.setColor(circleColor)
+            d.setColor(Color.parseColor("#448AFF"))
             d.shape = GradientDrawable.OVAL
             if (Build.VERSION.SDK_INT >= 21 && !isEnabledCell) {
                 fl.background = RippleDrawable(ColorStateList.valueOf(rippleColor), null, d)
